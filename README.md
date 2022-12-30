@@ -10,7 +10,7 @@ Per utilizzare il progetto:
 2. Inserire la chiave del proprio account OpenAI all'interno del file routes.py nella riga 21
 3. Avviare il server e utilizzare PostMan (o un'altra piattaforma API) per l'utilizzo della web app (i parametri di ogni view sono in formato JSON e vanno impostati 
    all'interno del body su PostMan)
-4. *Passare al punto 5 se il file è stato già caricato sul bucket Amazon* Utilizzare la view upload_file per caricare un file audio all'interno del proprio bucket Amazon 
+4. (Passare al punto 5 se il file è stato già caricato sul bucket Amazon) Utilizzare la view upload_file per caricare un file audio all'interno del proprio bucket Amazon 
    specificando i parametri: file_name (nome del file) e bucket (nome del bucket)
 5. Per iniziare la trascrizione avviare la view launch_transcribe specificando i parametri: file_name, bucket_name, job_name e language (esempio "en-US")
 6. Dopo la trascrizione è possibile avviare la sintetizzazione attraverso la view summarization, i parametri sono: model (può essere "GPT-3" o "Hugging Face" altrimenti
